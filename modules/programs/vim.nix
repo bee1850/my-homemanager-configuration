@@ -27,7 +27,7 @@ in
         nixvim.enable = true;
         zsh = {
            shellAliases.vim = "nvim";
-            environmentVariables.EDITOR = "nvim";
+           sessionVariables.EDITOR = "nvim";
         };
     };
 
