@@ -30,7 +30,7 @@
     firefox.enable = true;
     cyberchef.enable = true;
     my-git.enable = true;
-    my-vim.enable = true;
+    my-nvim.enable = true;
   };
 
   # This value determines the Home Manager release that your configuration is
