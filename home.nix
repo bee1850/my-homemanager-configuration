@@ -15,13 +15,13 @@
   ];
 
   # Plasma Configuration
-  imports = [ 
-    ./plasma/plasma.nix 
+  imports = [
+    ./plasma/plasma.nix
     ./modules/programs/cyberchef.nix
     ./modules/programs/git.nix
     ./modules/programs/zsh.nix
     ./modules/programs/vim.nix
-    ];
+  ];
 
   fonts.fontconfig.enable = true;
 

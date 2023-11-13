@@ -14,30 +14,30 @@ in
     };
   };
 
-  imports = [ 
-      ./config/nvim/autocmd.nix
-      ./config/nvim/colorscheme.nix
-      ./config/nvim/plugins.nix
-      ./config/nvim/settings.nix
-    ];
+  imports = [
+    ./config/nvim/autocmd.nix
+    ./config/nvim/colorscheme.nix
+    ./config/nvim/plugins.nix
+    ./config/nvim/settings.nix
+  ];
 
   config = lib.mkIf cfg.enable {
 
     programs = {
-        nixvim.enable = true;
-        zsh = {
-           shellAliases.vim = "nvim";
-           sessionVariables.EDITOR = "nvim";
-        };
+      nixvim.enable = true;
+      zsh = {
+        shellAliases.vim = "nvim";
+        sessionVariables.EDITOR = "nvim";
+      };
     };
 
     home = {
-        sessionVariables = {
-            EDITOR = "nvim";
-        };
-        shellAliases = {
-            vim = "nvim";
-        };
+      sessionVariables = {
+        EDITOR = "nvim";
+      };
+      shellAliases = {
+        vim = "nvim";
+      };
     };
 
   };
