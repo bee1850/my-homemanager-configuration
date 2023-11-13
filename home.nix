@@ -15,82 +15,22 @@
   ];
 
   # Plasma Configuration
-  imports = [ ./plasma/plasma.nix ./modules/programs/cyberchef.nix ];
+  imports = [ 
+    ./plasma/plasma.nix 
+    ./modules/programs/cyberchef.nix
+    ./modules/programs/git.nix
+    ./modules/programs/zsh.nix
+    ./modules/programs/vim.nix
+    ];
 
   fonts.fontconfig.enable = true;
 
   programs = {
-    zsh = {
-      enable = true;
-      enableAutosuggestions = true;
-      initExtra = "source ${./p10k.zsh}";
-      plugins = [
-        {
-          name = "powerlevel10k";
-          src = pkgs.zsh-powerlevel10k;
-          file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-        }
-      ];
-      shellAliases = {
-        nconf = "cd /etc/nixos/";
-        switch-nixos = "nconf && sudo nixpkgs-fmt . && sudo nixos-rebuild --flake . switch";
-        hconf = "cd /home/berkan/.config/home-manager/";
-        switch-home = "hconf && nixpkgs-fmt . && home-manager switch --flake .";
-        sshadd = "ssh-add ~/.ssh/id_ed25519";
-        git-push = "echo 'Pushing' && sshadd && git add . && git commit -m 'Update' && git push";
-      };
-      cdpath = [ "/etc/nixos" "/home/berkan/.config/home-manager" "/" ];
-    };
+    my-zsh.enable = true;
     firefox.enable = true;
-    thunderbird.enable = true;
-    thunderbird.profiles.default.isDefault = true;
     cyberchef.enable = true;
-    git = {
-      enable = true;
-      userEmail = "bee1850@thi.de";
-      userName = "Berkan E.";
-      extraConfig = {
-        safe = {
-          directory = "/etc/nixos";
-        };
-      };
-    };
-    vim = {
-      enable = true;
-      plugins = with pkgs; [ vimPlugins.async-vim vimPlugins.vim-lsp vimPlugins.asyncomplete-vim vimPlugins.asyncomplete-lsp-vim ];
-      extraConfig = ''
-        let skip_defaults_vim=1
-        set viminfo=""
-        if executable('terraform-ls')
-          au User lsp_setup call lsp#register_server({
-            \ 'name': 'terraform-ls',
-            \ 'cmd': {server_info->['terraform-ls', 'serve']},
-            \ 'whitelist': ['terraform'],
-            \ })
-        endif	
-        if executable('nil')
-          autocmd User lsp_setup call lsp#register_server({
-            \ 'name': 'nil',
-            \ 'cmd': {server_info->['nil']},
-            \ 'whitelist': ['nix'],
-            \ })
-        endif
-        if executable('clangd')
-        augroup lsp_clangd
-            autocmd!
-            autocmd User lsp_setup call lsp#register_server({
-                        \ 'name': 'clangd',
-                       \ 'cmd': {server_info->['clangd']},
-                        \ 'whitelist': ['c', 'cpp', 'objc', 'objcpp'],
-                        \ })
-            autocmd FileType c setlocal omnifunc=lsp#complete
-            autocmd FileType cpp setlocal omnifunc=lsp#complete
-            autocmd FileType objc setlocal omnifunc=lsp#complete
-            autocmd FileType objcpp setlocal omnifunc=lsp#complete
-          augroup end
-        endif
-      '';
-    };
+    my-git.enable = true;
+    my-vim.enable = true;
   };
 
   # This value determines the Home Manager release that your configuration is
