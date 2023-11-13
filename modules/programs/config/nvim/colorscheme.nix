@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 {
 
-  programs.nixvim.colorscheme.nord.enable = true;
+  programs.nixvim.colorschemes.nord.enable = true;
 
 }

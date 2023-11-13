@@ -17,7 +17,7 @@ in
   imports = [
     ./config/nvim/autocmd.nix
     ./config/nvim/colorscheme.nix
-    #./config/nvim/plugins.nix
+    ./config/nvim/plugins.nix
     ./config/nvim/settings.nix
   ];
 
