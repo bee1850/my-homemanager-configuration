@@ -27,6 +27,7 @@ in
       nixvim.enable = true;
       zsh = {
         shellAliases.vim = "nvim";
+        shellAliases.vi = "nvim";
         sessionVariables.EDITOR = "nvim";
       };
     };
@@ -37,6 +38,7 @@ in
       };
       shellAliases = {
         vim = "nvim";
+        vi = "nvim";
       };
     };
 

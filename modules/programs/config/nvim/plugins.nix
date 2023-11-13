@@ -13,5 +13,6 @@
         terraformls.enable = true;
       };
     };
+    lightline.enable = true;
   };
 }
