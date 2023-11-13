@@ -8,6 +8,6 @@
             spellang = [ "de" "en" ];
             enableMan = true;
             extraConfigVim = "let skip_defaults_vim=1\nset viminfo=\"\"";
-        }
+        };
     };
 }

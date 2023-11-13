@@ -11,7 +11,7 @@
                 eslint.enable = true;
                 nil_ls.enable = true;
                 terraformls.enable = true;
-            }
-        }
-    }
+            };
+        };
+    };
 }
