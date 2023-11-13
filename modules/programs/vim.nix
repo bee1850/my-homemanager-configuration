@@ -16,7 +16,7 @@ in
 
   config = lib.mkIf cfg.enable {
 
-    import = [ 
+    imports = [ 
       ./config/nvim/autocmd.nix
       ./config/nvim/colorscheme.nix
       ./config/nvim/plugins.nix
