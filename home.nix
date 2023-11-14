@@ -12,9 +12,8 @@
   # Overlays
   imports = [ ./overlays ];
 
-  # Plasma Configuration
+  # Custom programs/configurations
   imports = [
-    ./plasma/plasma.nix
     ./modules/programs
   ];
 
