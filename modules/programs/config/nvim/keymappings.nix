@@ -1,7 +1,7 @@
 { config, pkgs, ...}:
 {
     programs.nixvim = {
-        {
+       
             keymaps = [
                 { 
                     key = "<c-n>";
@@ -10,6 +10,6 @@
                     options.desc = "Opens ChadTree";
                 }
             ];
-        };
+        
     };
 }
