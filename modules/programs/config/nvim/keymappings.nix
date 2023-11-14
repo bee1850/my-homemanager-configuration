@@ -10,6 +10,6 @@
                     options.desc = "Opens ChadTree";
                 }
             ];
-        }
-    }
+        };
+    };
 }
