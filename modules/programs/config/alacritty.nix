@@ -1,3 +1,4 @@
+{ config, pkgs, ... }:
 {
     programs.alacritty.settings = {
         font = {
@@ -18,6 +19,6 @@
                 style = "Bold Italic";
             };
             
-        }
-    }
+        };
+    };
 }
