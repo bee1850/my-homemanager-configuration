@@ -10,17 +10,12 @@
   nixpkgs.config.allowUnfree = true;
 
   # Overlays
-  nixpkgs.overlays = [
-    (import ./overlays/cyberchef.nix)
-  ];
+  imports = [ ./overlays ];
 
   # Plasma Configuration
   imports = [
     ./plasma/plasma.nix
-    ./modules/programs/cyberchef.nix
-    ./modules/programs/git.nix
-    ./modules/programs/zsh.nix
-    ./modules/programs/vim.nix
+    ./modules/programs
   ];
 
   fonts.fontconfig.enable = true;
