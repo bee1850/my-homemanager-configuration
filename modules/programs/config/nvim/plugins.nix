@@ -10,9 +10,19 @@
         bashls.enable = true;
         eslint.enable = true;
         nil_ls.enable = true;
+        tsserver.enable = true;
+        tsserver.extraOptions = {
+            init_options = {
+              preferences = {
+                disableSuggestions = true;
+              };
+            };
+        };
         terraformls.enable = true;
       };
     };
+    chadtree.enable = true;
+    cmp-nvim-lsp.enable = true;
     lightline.enable = true;
   };
 }
