@@ -26,6 +26,7 @@
   fonts.fontconfig.enable = true;
 
   programs = {
+    my-alacritty.enable = true;
     my-zsh.enable = true;
     firefox.enable = true;
     cyberchef.enable = true;
