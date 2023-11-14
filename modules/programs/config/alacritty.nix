@@ -3,19 +3,19 @@
   programs.alacritty.settings = {
     font = {
       normal = {
-        family = "Meslo Nerd Font";
+        family = "MesloLGS NF";
         style = "Regular";
       };
       bold = {
-        family = "Meslo Nerd Font";
+        family = "MesloLGS NF";
         style = "Bold";
       };
       italic = {
-        family = "Meslo Nerd Font";
+        family = "MesloLGS NF";
         style = "Italic";
       };
       bold_italic = {
-        family = "Meslo Nerd Font";
+        family = "MesloLGS NF";
         style = "Bold Italic";
       };
 
