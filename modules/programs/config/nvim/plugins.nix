@@ -22,7 +22,6 @@
       };
     };
     chadtree.enable = true;
-    cmp-nvim-lsp.enable = true;
     lightline.enable = true;
   };
 }

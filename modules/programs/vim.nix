@@ -15,12 +15,7 @@ in
   };
 
   imports = [
-    ./config/nvim/autocmd.nix
-    ./config/nvim/icons.nix
-    ./config/nvim/keymappings.nix
-    ./config/nvim/colorscheme.nix
-    ./config/nvim/plugins.nix
-    ./config/nvim/settings.nix
+    ./config/nvim
   ];
 
   config = lib.mkIf cfg.enable {
