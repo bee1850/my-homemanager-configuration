@@ -6,7 +6,7 @@
                 { 
                     key = "<c-n>";
                     mode = [ "n" ];
-                    action = ":CHADopen";
+                    action = ":CHADopen<cr>";
                     options.desc = "Opens ChadTree";
                 }
             ];
