@@ -1,15 +1,15 @@
-{ config, pkgs, ...}:
+{ config, pkgs, ... }:
 {
-    programs.nixvim = {
-       
-            keymaps = [
-                { 
-                    key = "<c-n>";
-                    mode = [ "n" ];
-                    action = ":CHADopen<cr>";
-                    options.desc = "Opens ChadTree";
-                }
-                      {
+  programs.nixvim = {
+
+    keymaps = [
+      {
+        key = "<c-n>";
+        mode = [ "n" ];
+        action = ":CHADopen<cr>";
+        options.desc = "Opens ChadTree";
+      }
+      {
         key = "<c-l>";
         action = "<c-w>l";
         options.desc = "Move to right window";
@@ -30,7 +30,7 @@
         options.desc = "Move to above window";
       }
 
-            ];
-        
-    };
+    ];
+
+  };
 }
