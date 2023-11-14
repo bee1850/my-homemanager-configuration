@@ -9,13 +9,8 @@
   };
   nixpkgs.config.allowUnfree = true;
 
-  # Overlays
-  imports = [ ./overlays ];
-
-  # Custom programs/configurations
-  imports = [
-    ./modules/programs
-  ];
+  # Overlays & Custom programs/configurations
+  imports = [ ./overlays ./modules/programs ];
 
   fonts.fontconfig.enable = true;
 
