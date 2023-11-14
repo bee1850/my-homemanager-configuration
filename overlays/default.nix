@@ -1,5 +1,5 @@
 {
     nixpkgs.overlays = [
-        (import ./overlays/cyberchef.nix)
+        #(import ./cyberchef.nix)
     ];
 }
