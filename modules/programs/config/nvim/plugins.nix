@@ -21,6 +21,7 @@
         terraformls.enable = true;
       };
     };
+    nvim-ufo.enable = true;
     chadtree.enable = true;
     lightline.enable = true;
   };

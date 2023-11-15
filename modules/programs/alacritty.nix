@@ -14,9 +14,10 @@ in
     };
   };
 
-  imports = [ ./config/alacritty.nix ];
 
   config = lib.mkIf cfg.enable {
+
+    home.file.".config/alacritty/alacritty.yml".source = ./config/alacritty/alacritty.yml;
 
     programs.alacritty = {
       enable = true;
