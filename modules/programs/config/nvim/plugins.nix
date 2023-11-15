@@ -23,6 +23,16 @@
     };
     nvim-ufo.enable = true;
     chadtree.enable = true;
-    lightline.enable = true;
+    lualine.enable = true;
+    telescope.enable = true;
+    which-key.enable = true;
+    comment-nvim.enable = true;
+
+    ## NVIM CMP
+    nvim-cmp.enable = true;
+    cmp-buffer.enable = true;
+    cmp-cmdline.enable = true;
+    cmp-nvim-lsp.enable = true;
+    cmp-zsh.enable = true;
   };
 }
