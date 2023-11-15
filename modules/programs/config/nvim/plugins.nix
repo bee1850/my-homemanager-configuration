@@ -28,6 +28,10 @@
     which-key.enable = true;
     comment-nvim.enable = true;
 
+    # Todo
+    # vim-vsnip - https://github.com/rafamadriz/friendly-snippets/
+    # surround.vim - Surrounding in NVIM
+
     ## NVIM CMP
     nvim-cmp.enable = true;
     cmp-buffer.enable = true;
