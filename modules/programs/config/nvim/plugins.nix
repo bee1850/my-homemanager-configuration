@@ -21,7 +21,6 @@
         terraformls.enable = true;
       };
     };
-    nvim-ufo.enable = true;
     chadtree.enable = true;
     lualine.enable = true;
     telescope.enable = true;
@@ -31,6 +30,7 @@
     # Todo
     # vim-vsnip - https://github.com/rafamadriz/friendly-snippets/
     # surround.vim - Surrounding in NVIM
+    # nvim-ufo.enable = true;
 
     ## NVIM CMP
     nvim-cmp.enable = true;
