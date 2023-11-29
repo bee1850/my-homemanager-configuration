@@ -34,6 +34,8 @@ in
         switch-home = "hconf && nixpkgs-fmt . && home-manager switch --flake .";
         sshadd = "ssh-add ~/.ssh/id_ed25519";
         git-push = "echo 'Pushing' && sshadd && git add . && git commit -m 'Update' && git push";
+        ":q" = "exit";
+        update-flake = "nix flake update";
       };
       cdpath = [ "/etc/nixos" "/home/berkan/.config/home-manager" "/" ];
     };

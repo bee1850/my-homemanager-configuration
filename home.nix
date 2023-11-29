@@ -46,7 +46,9 @@
 
     # Communication
     discord
+    whatsapp-for-linux
     signal-desktop
+    telegram-desktop
 
     # Sharing
     warp
@@ -55,10 +57,15 @@
     nerdfonts
 
     # Utility
+    yt-dlp
+    media-downloader
+    tldr
     ripgrep
     nixpkgs-fmt
     tree
+    btop
     htop
+    vlc
 
     # IDE
     vscode
@@ -66,7 +73,7 @@
     jetbrains.webstorm
 
     # Miscellaneous
-    wxmaxima
+    # wxmaxima
     minecraft
     spotify
     obsidian
