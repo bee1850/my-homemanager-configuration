@@ -58,6 +58,7 @@
 
     # Utility
     yt-dlp
+    terraform
     media-downloader
     tldr
     ripgrep
