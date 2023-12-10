@@ -59,6 +59,7 @@
     # Utility
     yt-dlp
     terraform
+    mongodb-compass
     media-downloader
     tldr
     ripgrep
