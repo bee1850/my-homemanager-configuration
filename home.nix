@@ -7,7 +7,11 @@
     username = "berkan";
     homeDirectory = "/home/berkan";
   };
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config = {
+    allowUnfree = true;
+    permittedInsecurePackages = [ "electron-25.9.0" ]; # 25.9 is EOL, remove asap
+  };
+
 
   # Overlays & Custom programs/configurations
   imports = [ ./overlays ./modules/programs ];
@@ -54,13 +58,14 @@
     warp
 
     # Fonts
-    nerdfonts
+    (nerdfonts.override { fonts = [ "Meslo" ]; })
 
     # Utility
+    qdirstat
     yt-dlp
     terraform
     anki-bin
-    #mongodb-compass
+    mongodb-compass
     media-downloader
     tldr
     ripgrep
@@ -73,11 +78,11 @@
     # IDE
     vscode
     jetbrains.clion
-    jetbrains.webstorm
+    #jetbrains.webstorm
 
     # Miscellaneous
     # wxmaxima
-    calibre
+    #calibre
     minecraft
     spotify
     obsidian
