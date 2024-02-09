@@ -61,6 +61,7 @@
     (nerdfonts.override { fonts = [ "Meslo" ]; })
 
     # Utility
+    notepadqq
     qdirstat
     yt-dlp
     terraform
