@@ -30,6 +30,11 @@
         action = "<c-w>k";
         options.desc = "Move to above window";
       }
+      {
+        key = "<c-t>";
+        action = ":ToggleTerm direction=float<cr>";
+        options.desc = "Open Terminal";
+      }
 
     ];
 

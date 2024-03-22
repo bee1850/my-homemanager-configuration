@@ -11,6 +11,7 @@
         eslint.enable = true;
         nil_ls.enable = true;
         tsserver.enable = true;
+        texlab.enable = true;
         tsserver.extraOptions = {
           init_options = {
             preferences = {
@@ -20,6 +21,12 @@
         };
         terraformls.enable = true;
       };
+    };
+    toggleterm = {
+      enable = true;
+    };
+    vimtex = {
+      enable = true;
     };
     chadtree.enable = true;
     lualine.enable = true;

@@ -61,6 +61,8 @@
     (nerdfonts.override { fonts = [ "Meslo" ]; })
 
     # Utility
+    texliveFull
+    zathura
     notepadqq
     qdirstat
     yt-dlp
