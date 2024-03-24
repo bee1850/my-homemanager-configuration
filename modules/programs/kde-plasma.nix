@@ -21,6 +21,8 @@ in
       configFile = {
         "kdeglobals"."General"."TerminalApplication" = "alacritty";
         "kdeglobals"."General"."TerminalService" = "Alacritty.desktop";
+        "kcminputrc"."Keyboard"."NumLock" = 0;
+        "plasmarc"."Wallpapers"."usersWallpapers" = "/home/berkan/Downloads/67tlp8o2a6h71.png";
       };
       shortcuts = {
         "org.kde.spectacle.desktop"."RectangularRegionScreenShot" = [ "Ctrl+PgDown" "Meta+Shift+Print" ];
