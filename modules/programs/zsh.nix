@@ -18,7 +18,7 @@ in
 
     programs.zsh = {
       enable = true;
-      enableAutosuggestions = true;
+      autosuggestion.enable = true;
       initExtra = "source ${./config/p10k.zsh}";
       plugins = [
         {
