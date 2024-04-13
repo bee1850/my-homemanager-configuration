@@ -19,7 +19,10 @@ in
     programs.zsh = {
       enable = true;
       autosuggestion.enable = true;
-      initExtra = "source ${./config/p10k.zsh}";
+      initExtra = ''
+        eval $(thefuck --alias)
+        source ${./config/p10k.zsh}
+      '';
       plugins = [
         {
           name = "powerlevel10k";
