@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 {
   programs.nixvim = {
-    options = {
+    opts = {
       number = true;
       relativenumber = true;
       spell = false; # Has issues with CHADtree

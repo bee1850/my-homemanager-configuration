@@ -32,7 +32,7 @@
     lualine.enable = true;
     telescope.enable = true;
     which-key.enable = true;
-    comment-nvim.enable = true;
+    comment.enable = true;
 
     # Todo
     # vim-vsnip - https://github.com/rafamadriz/friendly-snippets/
