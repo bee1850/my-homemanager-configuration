@@ -52,7 +52,7 @@
     discord
     whatsapp-for-linux
     signal-desktop
-    telegram-desktop
+    #telegram-desktop
 
     # Sharing
     warp
@@ -62,13 +62,15 @@
 
     # Utility
     texliveFull
-    zathura
+    thefuck
+    #zathura
     notepadqq
-    qdirstat
+    kdePackages.kleopatra
+    #qdirstat
     yt-dlp
     terraform
     anki-bin
-    mongodb-compass
+    #mongodb-compass
     media-downloader
     tldr
     ripgrep
@@ -80,7 +82,7 @@
 
     # IDE
     vscode
-    jetbrains.clion
+    #jetbrains.clion
     #jetbrains.webstorm
 
     # Miscellaneous
