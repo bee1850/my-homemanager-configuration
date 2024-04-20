@@ -33,7 +33,7 @@
     # nvim-ufo.enable = true;
 
     ## NVIM CMP
-    nvim-cmp.enable = true;
+    cmp.enable = true;
     cmp-buffer.enable = true;
     cmp-cmdline.enable = true;
     cmp-nvim-lsp.enable = true;

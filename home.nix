@@ -9,7 +9,6 @@
   };
   nixpkgs.config = {
     allowUnfree = true;
-    permittedInsecurePackages = [ "electron-25.9.0" ]; # 25.9 is EOL, remove asap
   };
 
 
@@ -43,50 +42,14 @@
     # # "Hello, world!" when run.
     # hello
 
-    # Language Server Protocol Packages
-    nil
-    terraform-ls
-    clang-tools
-
-    # Communication
-    discord
-    whatsapp-for-linux
-    signal-desktop
-    telegram-desktop
-
-    # Sharing
-    warp
-
     # Fonts
     (nerdfonts.override { fonts = [ "Meslo" ]; })
 
-    # Utility
-    notepadqq
-    qdirstat
-    yt-dlp
-    terraform
-    anki-bin
-    mongodb-compass
-    media-downloader
-    tldr
     ripgrep
     nixpkgs-fmt
     tree
     btop
-    htop
-    vlc
 
-    # IDE
-    vscode
-    jetbrains.clion
-    #jetbrains.webstorm
-
-    # Miscellaneous
-    # wxmaxima
-    #calibre
-    minecraft
-    spotify
-    obsidian
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
