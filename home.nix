@@ -48,6 +48,9 @@
     terraform-ls
     clang-tools
 
+    # GO
+    go
+
     # Communication
     discord
     whatsapp-for-linux
@@ -66,6 +69,7 @@
     #zathura
     notepadqq
     kdePackages.kleopatra
+    zotero
     #qdirstat
     yt-dlp
     terraform
