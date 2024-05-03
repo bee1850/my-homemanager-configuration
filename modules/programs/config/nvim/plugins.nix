@@ -46,7 +46,7 @@
       settings = {
         completion = {
           #autocomplete = [ "require('cmp.types').cmp.TriggerEvent.TextChanged" ];
-          completeopt = "menu,menuone,noselect";
+          #completeopt = "menu,menuone,noselect";
           #keyword_length = 1;
           #keyword_pattern = "[[\%(-\?\d\+\%(\.\d\+\)\?\|\h\w*\%(-\w*\)*\)]]";
         };
