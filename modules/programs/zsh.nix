@@ -28,9 +28,9 @@ in
         }
       ];
       shellAliases = {
-        nconf = "cd /etc/nixos/";
+        nconf = "cd /etc/nixos/ && echo 'Remember to pull before editing!";
         switch-nixos = "nconf && sudo nixpkgs-fmt . && sudo nixos-rebuild --flake . switch";
-        hconf = "cd /home/berkan/.config/home-manager/";
+        hconf = "cd /home/berkan/.config/home-manager/ && echo 'Remember to pull before editing!";
         switch-home = "hconf && nixpkgs-fmt . && home-manager switch --flake .";
         sshadd = "ssh-add ~/.ssh/id_ed25519";
         git-push = "echo 'Pushing' && sshadd && git add . && git commit -m 'Update' && git push";
