@@ -53,7 +53,6 @@
 
     # Communication
     discord
-    whatsapp-for-linux
     signal-desktop
     #telegram-desktop
 
@@ -92,7 +91,6 @@
     # Miscellaneous
     # wxmaxima
     #calibre
-    minecraft
     spotify
     obsidian
     # # It is sometimes useful to fine-tune packages, for example, by applying
