@@ -20,8 +20,8 @@ in
       enable = true;
       autosuggestion.enable = true;
       initExtra = ''
-        eval $(thefuck --alias)
-        source ${./config/p10k.zsh}
+                source ${./config/p10k.zsh}
+        	nix run nixpkgs#fastfetch
       '';
       plugins = [
         {
