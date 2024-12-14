@@ -60,7 +60,7 @@
     warp
 
     # Fonts
-    (nerdfonts.override { fonts = [ "Meslo" ]; })
+    nerd-fonts.meslo-lg
 
     # Utility
     texliveFull
