@@ -45,7 +45,6 @@
 
     # Language Server Protocol Packages
     nil
-    terraform-ls
     clang-tools
 
     # GO
@@ -71,7 +70,6 @@
     zotero
     #qdirstat
     yt-dlp
-    terraform
     anki-bin
     #mongodb-compass
     media-downloader
