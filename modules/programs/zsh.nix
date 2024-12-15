@@ -34,6 +34,7 @@ in
         switch-home = "hconf && nixpkgs-fmt . && home-manager switch --flake .";
         sshadd = "ssh-add ~/.ssh/id_ed25519";
         git-push = "echo 'Pushing' && sshadd && git add . && git commit -m 'Update' && git push";
+	wake-pc = "wakeonlan 74:56:3C:46:51:04";
         ":q" = "exit";
         update-flake = "nix flake update";
       };
