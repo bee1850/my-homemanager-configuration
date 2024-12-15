@@ -36,7 +36,10 @@ family = "MesloLGS Nerd Font"
 family = "MesloLGS Nerd Font"
 
 [font.italic]
-family = "MesloLGS Nerd Font"
+family = "MesloLGS Nerd Font"   
 
 [font.normal]
 family = "MesloLGS Nerd Font"
+
+
+################## fc-cache -r fixed missing symbols
