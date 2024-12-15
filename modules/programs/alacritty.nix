@@ -18,7 +18,6 @@ in
   config = lib.mkIf cfg.enable {
 
     home.file.".config/alacritty/alacritty.toml".source = ./config/alacritty/alacritty.toml;
-    home.file.".config/alacritty/alacritty.yml".source = ./config/alacritty/alacritty.yml;
 
     programs.alacritty = {
       enable = true;
