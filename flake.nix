@@ -27,18 +27,21 @@
   outputs = { nixpkgs, home-manager, plasma-manager, nixvim, ... }:
     let
       system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
-
+      pkgs = import nixpkgs {
+        inherit system;
+        config = { allowUnfree = true; };
+      };
+      modules_base = [ ./home.nix plasma-manager.homeManagerModules.plasma-manager nixvim.homeManagerModules.nixvim ];
     in
     {
+      homeConfigurations."berkan@morpheus" = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        modules = modules_base ++ [{home.packages = (import ./pkgs/nuc.nix { inherit pkgs; });}];
+      };
+
       homeConfigurations."berkan" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        # Specify your home configuration modules here, for example,
-        # the path to your home.nix.
-        modules = [ ./home.nix plasma-manager.homeManagerModules.plasma-manager nixvim.homeManagerModules.nixvim ];
-
-        # Optionally use extraSpecialArgs
-        # to pass through arguments to home.nix
+        modules = modules_base ++ [{home.packages = (import ./pkgs/all.nix { inherit pkgs; });}];
       };
     };
 }
